@@ -59,7 +59,7 @@ const code = document.querySelector('.code')
     function verifyPwd() {
       const reg = /^[a-zA-Z\d-_\.]{6,20}$/
       if (!reg.test(pwd.value)) {
-        pwd.nextElementSibling.innerHTML = '验证码输入错误'
+        pwd.nextElementSibling.innerHTML = '格式错误，请输入6-20位带有数字、字母等'
         return false
       }
       pwd.nextElementSibling.innerHTML = ''
